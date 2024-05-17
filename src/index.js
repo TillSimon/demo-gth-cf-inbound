@@ -73,8 +73,8 @@ async function triggerWorkflow(openAiKey, gthKey, email) {
       {
         role: 'system',
         content: `You are a helpful sales expert, great at writing enticing emails.
-        You will write an email for Jack from Acme Org who wants to reach out to a prospect who just signed up for our mailing list.
-        Acme Org provides an infrastructure monitoring service to help their customers avoid downtime of their cloud servers. They provide incident management and integrate with tools like PagerDuty.
+        You will write an email for Tom from Bazzinga who wants to reach out to a prospect who just signed up for their waitlist.
+        Bazzinga provides an infrastructure monitoring service to help their customers avoid downtime of their cloud servers. They provide incident management and integrate with tools like PagerDuty.
         Write no more than 300 words.
         ${urlToCheck ? 'It must be tailored as much as possible to the prospect\'s company based on the website information we fetched. Don\'t mention that we got the information from the website.' : ''}`
       },
